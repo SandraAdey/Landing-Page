@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinnamon Rolls</title>
+    <style>
+        body {
+            background-color: lightpink;
+            width: 50%;
+            margin: 60px auto;
+            font-family: "Poppins", sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: palevioletred;
+            margin-top: 1px;
+            font-size: 20px;
+        }
+        h2 {
+            text-align: center;
+            border: 1px solid pink;
+            padding: 20px;
+            font-size: 25px;
+            border-radius: 4px;
+            background-color: pink;
+            color: white;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 20px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 14px;
+            margin-top: 30px;
+            margin-bottom: 20px 0 10px;
+            
+        }
+
+        button {
+            display: block;
+            margin: 30px auto;
+            background: lightpink;
+            color: white;
+            font-size: 18px ;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+
+        h4 {
+            font-weight: lighter;
+            text-align: center;
+            color: rgb(140, 140, 140);
+        }
+
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+
+        }
+        .card {
+  /* Add shadows to create the "card" effect */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 20px 20px;
+  background-color: rgb(255, 250, 244);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+        }
+
+
+        .learn-more {
+            color: palevioletred;
+            text-decoration: none;
+            font-size: 12px;
+            
+
+        }
+        .learn-more.hover {
+           text-decoration: underline;
+            
+        }
+        
+        .footer {
+            font-size: 15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+    <div class="container">
+    <h1>
+       I love Cinnamon Rolls  
+    </h1>
+    <h2>
+        🍰 🥧 🍪 🎂 🥐 💕
+    </h2>
+    <img src="https://www.cookingwithmykids.co.uk/wp-content/uploads/2020/11/cinnamon-buns21-1536x1024.jpg" alt="Cinnamon Rolls"
+    width="300"/>
+    <p>
+        <strong>A cinnamon roll</strong> (also known as cinnamon bun, cinnamon swirl, 
+        cinnamon Danish and cinnamon snail) is a sweet roll commonly 
+        served in Northern Europe (mainly in Nordic countries, but also in 
+        Austria and Germany) and North America. 
+        <br />
+        </p>
+        <small><a href="https://en.wikipedia.org/wiki/Strained_yogurt" target="_blank">Read on Wikipedia</a></small>
+    <br>
+      <button class="btn">Try a Cinnamon Roll</button>
+      <h4>Built by Sandra Adeyinka</h4>
+
+    <script>
+      document.querySelector('.btn').addEventListener('click', function() {
+        let name = prompt('What is your name?');
+        if (name.length) {
+          alert('Thanks, ' + name + ' , we will be in touch. Meanwhile, have a Cinnamon Roll!💕')
+        } else {
+          alert('No name, no Cinnamon Rolls for you!')
+        }
+      });
+    </script>
+</body>
+</html>
